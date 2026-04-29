@@ -1,0 +1,1 @@
+import css from "@/components/Pagination/Pagination.module.css";

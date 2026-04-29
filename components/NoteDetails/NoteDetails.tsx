@@ -1,0 +1,1 @@
+import css from "@/components/NoteDetails/NoteDetails.module.css";

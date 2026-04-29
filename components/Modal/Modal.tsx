@@ -1,0 +1,1 @@
+import css from "@/components/Modal/Modal.module.css";
