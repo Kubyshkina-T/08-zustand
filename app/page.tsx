@@ -1,4 +1,14 @@
-import css from "@/app/page.module.css"
+import css from "@/app/page.module.css";
+import { fetchNotes } from "@/lib/api";
+import { Metadata } from "next";
+
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const data = await fetchNotes();
+  return {
+    title: `NoteHub`
+  }
+}
 
 export default function Home() {
   return (

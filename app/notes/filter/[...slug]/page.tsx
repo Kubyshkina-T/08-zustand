@@ -6,6 +6,9 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 
+
+
+
 type Props = {
     params: Promise<{ slug: string[] }>;
 }
