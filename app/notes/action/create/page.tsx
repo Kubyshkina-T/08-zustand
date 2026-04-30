@@ -8,7 +8,7 @@ export default function CreateNote() {
        <main className={css.main}>
   <div className={css.container}>
     <h1 className={css.title}>Create note</h1>
-	   {<NoteForm onClose={}/>}
+	   {/* {<NoteForm onClose={()=> router.push("/notes/action/create")}/>} */}
   </div>
 </main>
  
