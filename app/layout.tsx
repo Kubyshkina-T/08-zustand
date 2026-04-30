@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NoteHub",
     description: "Manage your notes easily and efficiently",
-    images:"/public/notehub-og-meta.jpg"
+    images:[
+    {
+      url: "/notehub-og-meta.jpg",
+      width: 1200,
+      height: 630,
+    },
+  ],
   }
 };
 
