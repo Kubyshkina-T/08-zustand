@@ -2,7 +2,7 @@
 
 import css from "@/app/notes/NotesPage.module.css";
 import NoteList from "@/components/NoteList/NoteList";
-import { useQuery, keepPreviousData } from "@tanstack/react-query";
+import { useQuery, keepPreviousData, useMutation } from "@tanstack/react-query";
 import { fetchNotes } from "@/lib/api";
 import { useState } from "react";
 import Pagination from "@/components/Pagination/Pagination";
@@ -10,6 +10,7 @@ import NoteForm from "@/components/NoteForm/NoteForm";
 import SearchBox from "@/components/SearchBox/SearchBox";
 import { useDebouncedCallback } from "use-debounce";
 import { useRouter } from "next/navigation";
+
 
 type NotesClientProps = {
   tag?: string;
@@ -19,6 +20,8 @@ export default function NotesClient({ tag }: NotesClientProps) {
   const router = useRouter();
   const [page, setPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
+
+
 const handleSearch = useDebouncedCallback((value: string) => {
     setSearchQuery(value);
     setPage(1);
