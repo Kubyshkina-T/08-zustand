@@ -1,1 +1,0 @@
-import css from "@/components/CreateNote/CreateNote.module.css";

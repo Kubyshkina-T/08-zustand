@@ -1,1 +1,0 @@
-import css from "@/components/NotesPage/NotesPage.module.css";

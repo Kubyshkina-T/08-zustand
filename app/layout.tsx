@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     title: "NoteHub",
     description: "Manage your notes easily and efficiently",
     images:[
-    {
+      {
+      alt:"HoteHub preview",
       url: "/notehub-og-meta.jpg",
       width: 1200,
       height: 630,

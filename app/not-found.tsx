@@ -10,6 +10,7 @@ export const metadata: Metadata = {
         url: "not-found",
         images: [
             {
+                alt:"Page not found",
                 url: "/notehub-og-meta.jpg",
                 width: 1200,
                 height: 630,

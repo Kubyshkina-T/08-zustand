@@ -1,14 +1,26 @@
 import css from "@/app/page.module.css";
-import { fetchNotes } from "@/lib/api";
 import { Metadata } from "next";
 
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const data = await fetchNotes();
   return {
-    title: `NoteHub`
+   title: "NoteHub",
+    description: "Manage your notes easily and efficiently.",
+    openGraph: {
+      title: "NoteHub",
+      description: "Manage your notes easily and efficiently.",
+      url: "/",
+      images: [
+        {
+          alt: "NotHub logo",
+          url: "/notehub-og-meta.jpg",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+  };
   }
-}
 
 export default function Home() {
   return (
