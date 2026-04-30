@@ -17,10 +17,11 @@ export const metadata: Metadata = {
   description: "Manage your notes easily and efficiently",
   openGraph: {
     title: "NoteHub",
-    description: "Manage your notes easily and efficiently",
+   url:"https://08-zustand-zeta-self.vercel.app/",
+     description: "Manage your notes easily and efficiently",
     images:[
       {
-      alt:"HoteHub preview",
+      alt:"NoteHub preview",
       url: "/notehub-og-meta.jpg",
       width: 1200,
       height: 630,
